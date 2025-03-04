@@ -5,7 +5,7 @@ def longest_subarray_sum(arr, k):
   s = arr[0]
 
   while right < n:
-    while left <= right and s > k:
+    while s > k and left <= right:
       s -= arr[left]
       left += 1
     
