@@ -1,6 +1,8 @@
+import sys
+
 def max_subarr_sum(arr):
   Sum = 0
-  Max = 0
+  Max = -sys.maxsize - 1
   i = 0
 
   while i < len(arr):
